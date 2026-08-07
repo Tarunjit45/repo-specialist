@@ -1,41 +1,67 @@
-# 🚀 GitHub Repo Specialist
+# Repo Specialist
 
-A specialized terminal-based tool built in Python to discover the latest and most relevant repositories on GitHub. This tool helps you hunt for high-quality code in specialized categories.
+[![GitHub License](https://img.shields.io/github/license/Tarunjit45/repo-specialist?style=flat-square)](LICENSE)
+[![CI / Quality Check](https://github.com/Tarunjit45/repo-specialist/actions/workflows/ci.yml/badge.svg)](https://github.com/Tarunjit45/repo-specialist/actions)
+[![Language](https://img.shields.io/badge/Language-Python-blue?style=flat-square)](https://github.com/Tarunjit45/repo-specialist)
 
----
-
-## ✨ Features
-* **Secure Authentication**: Uses GitHub Personal Access Tokens (PAT) for reliable API access.
-* **Smart Category Filters**: Instant search for AI, Cybersecurity, Darkweb, Databases, and Networking.
-* **Real-Time Data**: Fetches the most recently updated repositories to ensure you find active projects via the GitHub Search API.
-* **Terminal-to-Browser**: Open any repository link in your default browser directly from the terminal.
+A modern, high-performance open-source project built with Python. Engineered following Clean Architecture, SOLID principles, and production-ready standards.
 
 ---
 
-## After Launching the tool it look like this 
-   Now Paste your GitHub Token and it will be hidden and hit enter - Then select ripo catagory and hit enter , it will shows u the top 10 best ripos on that catagory - select the number and hit enter it will take    u directly to that ripo
-<img width="796" height="227" alt="Screenshot 2026-01-14 143052" src="https://github.com/user-attachments/assets/054e9ba7-ce6c-4695-b9cb-773e5ba6e57e" />
-<img width="683" height="246" alt="Screenshot 2026-01-14 143114" src="https://github.com/user-attachments/assets/ac34acc9-ff7c-4eb9-9d0e-b447cfb06d99" />
-<img width="1361" height="649" alt="Screenshot 2026-01-14 143144" src="https://github.com/user-attachments/assets/ba2c680d-74e7-4772-81e6-a0dc621e3f05" />
-<img width="1458" height="402" alt="Screenshot 2026-01-14 143208" src="https://github.com/user-attachments/assets/0892ab2c-cbed-4b15-9991-0cbb97761417" />
+## 🌟 Key Features
 
+- **Robust Architecture:** Modular and clean separation of concerns.
+- **Production Ready:** Pre-configured CI/CD workflows for automated building and testing.
+- **Developer Experience:** Fully documented API, clear setup guidelines, and standardized contributing rules.
+- **Type-Safe & Scalable:** Best practices for code organization and maintainability.
 
+---
 
-## 🛠️ Installation & Setup & launch
+## 🚀 Quick Start
 
-### Prepare the Environment & Launching
-Run these commands in your terminal to set up the project:
-```powershell
-# Create project folder
-mkdir repo-specialist && cd repo-specialist
+### Prerequisites
 
-# Set up virtual environment
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+- Modern runtime environment (Python)
+- Git
 
-# Install dependencies
-pip install requests
+### Installation
 
-# Launch the Tool
-python hunt.py
+```bash
+git clone https://github.com/Tarunjit45/repo-specialist.git
+cd repo-specialist
+```
 
+### Setup Virtual Environment
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### Run Tests
+
+```bash
+pytest
+```
+
+---
+
+## 🗺️ Roadmap & Future Enhancements
+
+- [x] Initial architecture & core features
+- [x] Standardized open-source governance & CI/CD
+- [ ] Automated end-to-end test expansion
+- [ ] Production deployment & release tags
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE OF CONDUCT](CODE_OF_CONDUCT.md) before submitting Pull Requests.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
