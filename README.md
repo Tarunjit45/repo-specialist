@@ -1,68 +1,61 @@
-# 🚀 repo-specialist
+# 🔍 Repo Specialist — Terminal CLI for Trending GitHub Discovery
 
-![Language](https://img.shields.io/badge/Language-Python-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Production-Active-success?style=for-the-badge)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![GitHub API](https://img.shields.io/badge/API-GitHub%20REST-181717?style=for-the-badge&logo=github&logoColor=white)](https://docs.github.com/en/rest)
+[![CLI](https://img.shields.io/badge/Interface-Interactive%20Terminal-4EAA25?style=for-the-badge)](hunt.py)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## 📌 Overview
+**Repo Specialist** is a command-line tool built in Python for developers, security researchers, and engineers to hunt and discover the latest trending open-source projects across **AI, Cybersecurity, Dark Web Intelligence, and Networking**.
 
-A powerful Python-based terminal CLI to discover the latest and most trending GitHub repositories. Hunt for high-quality projects in AI, Cybersecurity, Darkweb, and Networking with real-time API filtering and instant browser access.
+---
 
-## ✨ Key Features & Architecture
+## ✨ Features
 
-- **High-Performance Codebase:** Built using `Python` and modern engineering principles.
-- **Modular & Scalable Design:** Structured directory tree for seamless development and deployment.
+* 🎯 **Curated Sector Intelligence:** Filter repositories specifically across:
+  * 🤖 Artificial Intelligence & Machine Learning
+  * 🔒 Cybersecurity & Penetration Testing
+  * 🌐 Networking & Protocols
+  * 🕵️ Dark Web Research & Threat Intelligence
+* 🔐 **Secure Token Authentication:** Prompts for your GitHub Personal Access Token via hidden input (`getpass`) to bypass strict unauthenticated rate limits.
+* 🚀 **One-Key Browser Launch:** Seamlessly open selected repositories directly in your default web browser using Python's `webbrowser` library.
+* 📈 **Growth & Star Filtering:** Sorts by recency, total stars, and active development velocity.
 
-## 🛠️ Tech Stack & Dependencies
+---
 
-- **Core Language:** `Python`
-- **Libraries & Tools:** Python
-- **Deployment Infrastructure:** Vercel Edge / Cloud Services
-
-## 📁 Architecture & File Layout
+## 📁 Repository Structure
 
 ```text
 repo-specialist/
-├── .github
-├── .github/ISSUE_TEMPLATE
-├── .github/ISSUE_TEMPLATE/bug_report.md
-├── .github/ISSUE_TEMPLATE/feature_request.md
-├── .github/PULL_REQUEST_TEMPLATE.md
-├── .github/workflows
-├── .github/workflows/ci.yml
-├── .gitignore
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-├── hunt.py
+├── hunt.py             # Interactive CLI search & GitHub API discovery engine
+├── LICENSE             # MIT License
+└── README.md
 ```
 
-## 🚀 Quickstart & Installation
+---
 
-### Prerequisites
-- Python 3.9+
-- pip package manager
+## 🚀 Installation & Usage
 
-### Setup Instructions
+### 1. Installation
+Clone the repository:
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Tarunjit45/repo-specialist.git
-   cd repo-specialist
-   ```
+```bash
+git clone https://github.com/Tarunjit45/repo-specialist.git
+cd repo-specialist
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+pip install requests
+```
 
-3. **Execute application:**
-   ```bash
-   python main.py
-   ```
+### 2. Run Repo Hunter
+```bash
+python hunt.py
+```
 
-## 📜 Author & License
+1. Enter your GitHub token when prompted (input characters remain hidden for security).
+2. Select your domain of interest from the interactive menu.
+3. Review trending projects with descriptions, star counts, and direct links.
+4. Select a project to instantly open it in your browser!
 
-Architected & Developed by **[Tarunjit Biswas](https://github.com/Tarunjit45)**.  
-Distributed under the **MIT License**.
+---
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
